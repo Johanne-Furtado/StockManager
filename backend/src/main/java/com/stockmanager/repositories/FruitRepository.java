@@ -6,4 +6,6 @@ import com.stockmanager.entities.Fruit;
 
 public interface FruitRepository  extends JpaRepository<Fruit, Long> {
     
+
+    boolean existsBySku(String sku);
 }

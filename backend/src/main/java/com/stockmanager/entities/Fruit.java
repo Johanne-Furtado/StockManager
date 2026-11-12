@@ -55,7 +55,28 @@ public class Fruit {
     @Column(nullable = false, precision = 10, scale = 3)
     private BigDecimal minimumStock;
 
-    protected Fruit(){}
+    protected Fruit() {
+
+    }
+
+    
+
+
+
+    public Fruit(String sku, String name, String variety, String origin,
+            BigDecimal pricePerKg, BigDecimal quantityInStock, BigDecimal minimumStock) {
+        this.sku = sku;
+        this.name = name;
+        this.variety = variety;
+        this.origin = origin;
+        this.pricePerKg = pricePerKg;
+        this.quantityInStock = quantityInStock;
+        this.minimumStock = minimumStock;
+    }
+
+
+
+
 
     public Long getId() {
         return id;
